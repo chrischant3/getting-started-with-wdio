@@ -93,6 +93,18 @@ Exports.config = {
 }
 
 ```
+You will need to add a .babelrc file with the following:
+
+```javascript
+{
+  "presets": ["es2015"],
+  "plugins": [
+    ["transform-runtime", {
+      "polyfill": false
+    }]
+  ]
+}
+```
 
 #### Example Project
 
